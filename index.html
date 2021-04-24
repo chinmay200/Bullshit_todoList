@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/dist/css/styles.css">
+</head>
+
+<body>
+    <main>
+        <div class="title">
+            <h1 class="text">todo</h1>
+        </div>
+        <div class="taskcount">tasks - <strong>0</strong></div>
+
+        </div>
+        <div class="task-detail">
+            <input type="text" value="" class="task" placeholder="ADD DESCRIPTION.." autofocus>
+            <div class="urgency">
+                <input type="radio" name="task-urgency" id="urgent" value="urgent" required="true">
+                <label for="task-urgency"> urgent </label><br>
+                <input type="radio" name="task-urgency" id="not-urgent" value="noturgent" required="true" checked>
+                <label for="task-urgency"> not-urgent </label><br>
+            </div>
+            <input type="submit" value="add task" class="additms add">
+        </div>
+        <div class="btn">
+            <button class="additms newtsk">new task</button>
+        </div>
+        <div class="contains">
+                <div class="task-list">
+                    <ul class="list-urgent urgent del"></ul>
+                </div>
+
+                <div class="task-list">
+                    <ul class="list-noturgent noturgent del"></ul>
+
+            </div>
+        </div>
+    </main>
+    <script src="/jquery-3.6.0.min.js"></script>
+    <script src="/additems.js"></script>
+</body>
+
+</html>
